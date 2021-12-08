@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Primary">
+
+        <ImageView
+            android:id="@+id/ivLogin"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ecommerce"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtPCHOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="PCHOP"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="55sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="@+id/ivLogin"
+            app:layout_constraintStart_toStartOf="@+id/ivLogin"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogin"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="25dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/etPassword"
+                app:layout_constraintStart_toStartOf="@+id/etPassword"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="LOGIN"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPCHOP"
+                    android:hint="Username"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:autofillHints="email"
+                    android:inputType="text"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etemail"
+                    android:hint="Password"
+                    android:autofillHints="password"
+                    android:inputType="textPassword"
+                    style="@style/Widget.AppCompat.EditText"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSignup"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="sign up"
+                        android:backgroundTint="@color/Secondary"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:text="login"
+                        android:backgroundTint="@color/Secondary"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
