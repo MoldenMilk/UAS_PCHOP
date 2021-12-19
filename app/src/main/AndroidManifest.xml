@@ -19,16 +19,7 @@
             android:name=".RV.RVGamesAdapter"
             android:exported="true" />
         <activity
-            android:name=".Display.TampilGames"
-            android:exported="true" />
-        <activity
             android:name=".RV.RVClothesAdapter"
-            android:exported="true" />
-        <activity
-            android:name=".Display.TampilClothes"
-            android:exported="true" />
-        <activity
-            android:name=".Display.TampilSport"
             android:exported="true" />
         <activity
             android:name=".RV.RVSportAdapter"

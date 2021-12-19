@@ -10,12 +10,52 @@
         android:id="@+id/navigation_home"
         android:name="com.pbp.uas_pchop.Display.HomeFrag"
         android:label="home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profil"
+            app:destination="@id/navigation_profil" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_clothes"
+            app:destination="@id/navigation_clothes" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_games"
+            app:destination="@id/navigation_games" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_sport"
+            app:destination="@id/navigation_sport" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_kitchen"
+            app:destination="@id/navigation_kitchen" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profil"
         android:name="com.pbp.uas_pchop.Display.ProfileFrag"
         android:label="profil"
         tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_clothes"
+        android:name="com.pbp.uas_pchop.Display.ClothesFrag"
+        android:label="clothes"
+        tools:layout="@layout/fragment_clothes" />
+
+    <fragment
+        android:id="@+id/navigation_games"
+        android:name="com.pbp.uas_pchop.Display.GamesFrag"
+        android:label="games"
+        tools:layout="@layout/fragment_games" />
+
+    <fragment
+        android:id="@+id/navigation_sport"
+        android:name="com.pbp.uas_pchop.Display.SportFrag"
+        android:label="sport"
+        tools:layout="@layout/fragment_sport" />
+
+    <fragment
+        android:id="@+id/navigation_kitchen"
+        android:name="com.pbp.uas_pchop.Display.KitchenFrag"
+        android:label="kitchen"
+        tools:layout="@layout/fragment_kitchen" />
 
 </navigation>
