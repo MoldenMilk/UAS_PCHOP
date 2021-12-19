@@ -1,28 +1,24 @@
-package com.pbp.uas_pchop.RV;
+package com.pbp.uas_pchop.rv;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbp.uas_pchop.DB.DataClothes;
-import com.pbp.uas_pchop.DB.DataSport;
+import com.pbp.uas_pchop.db.DataSport;
 import com.pbp.uas_pchop.R;
-import com.pbp.uas_pchop.databinding.ActivityRvclothesAdapterBinding;
 import com.pbp.uas_pchop.databinding.ActivityRvsportAdapterBinding;
 
 import java.util.List;
 
-public class RVClothesAdapter extends RecyclerView.Adapter<RVClothesAdapter.viewHolder> {
+public class RVSportAdapter extends RecyclerView.Adapter<RVSportAdapter.viewHolder> {
     public class viewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private ActivityRvclothesAdapterBinding binding;
-        public viewHolder(@NonNull ActivityRvclothesAdapterBinding binding) {
+        private ActivityRvsportAdapterBinding binding;
+        public viewHolder(@NonNull ActivityRvsportAdapterBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }
@@ -31,26 +27,26 @@ public class RVClothesAdapter extends RecyclerView.Adapter<RVClothesAdapter.view
         }
     }
     private Context context;
-    private List<DataClothes> dataClothes;
-    ActivityRvclothesAdapterBinding binding;
+    private List<DataSport> dataSport;
+    ActivityRvsportAdapterBinding binding;
 
-    public RVClothesAdapter(Context context, List<DataClothes> dataClothes) {
+    public RVSportAdapter(Context context, List<DataSport> dataSport) {
         this.context = context;
-        this.dataClothes = dataClothes;
+        this.dataSport = dataSport;
     }
     @NonNull
     @Override
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int ViewType) {
-        binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.activity_rvclothes_adapter, parent, false);
+        binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.activity_rvsport_adapter, parent, false);
         return new viewHolder(binding);
     }
     @Override
     public void onBindViewHolder(@NonNull viewHolder viewHolder, final int position) {
-        final DataClothes clts = dataClothes.get(position);
-        binding.setClts(clts);
+        final DataSport sprt = dataSport.get(position);
+        binding.setSprt(sprt);
     }
     @Override
     public int getItemCount() {
-        return dataClothes.size();
+        return dataSport.size();
     }
 }

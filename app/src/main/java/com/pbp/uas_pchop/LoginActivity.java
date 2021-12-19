@@ -10,10 +10,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
-import com.pbp.uas_pchop.DB.DatabaseClient;
-import com.pbp.uas_pchop.Display.HomeFrag;
-import com.pbp.uas_pchop.Model.User;
-import com.pbp.uas_pchop.Preferences.UserPreferences;
+import com.pbp.uas_pchop.db.DatabaseClient;
+import com.pbp.uas_pchop.model.User;
+import com.pbp.uas_pchop.preferences.UserPreferences;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;

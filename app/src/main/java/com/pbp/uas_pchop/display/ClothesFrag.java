@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.Display;
+package com.pbp.uas_pchop.display;
 
 import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 
@@ -14,12 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbp.uas_pchop.DB.DataClothes;
+import com.pbp.uas_pchop.db.DataClothes;
 import com.pbp.uas_pchop.R;
-import com.pbp.uas_pchop.RV.RVClothesAdapter;
+import com.pbp.uas_pchop.rv.RVClothesAdapter;
 import com.pbp.uas_pchop.databinding.FragmentClothesBinding;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ClothesFrag extends Fragment {
@@ -34,13 +33,13 @@ public class ClothesFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_clothes, container, false);
-        recyclerView = binding.getRoot().findViewById(R.id.rv_clothes);
+//        recyclerView = binding.getRoot().findViewById(R.id.rv_clothes);
 //        rvClothesAdapter = new RVClothesAdapter(new ArrayList<>(), listener);
-        layoutManager = new LinearLayoutManager(getApplicationContext());
+//        layoutManager = new LinearLayoutManager(getApplicationContext());
 
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(rvClothesAdapter);
+//        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setAdapter(rvClothesAdapter);
 
         return binding.getRoot();
     }

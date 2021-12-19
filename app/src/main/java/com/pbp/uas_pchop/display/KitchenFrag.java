@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.Display;
+package com.pbp.uas_pchop.display;
 
 import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 
@@ -14,9 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbp.uas_pchop.DB.DataKitchen;
+import com.pbp.uas_pchop.db.DataKitchen;
 import com.pbp.uas_pchop.R;
-import com.pbp.uas_pchop.RV.RVKitchenAdapter;
+import com.pbp.uas_pchop.rv.RVKitchenAdapter;
 import com.pbp.uas_pchop.databinding.FragmentKitchenBinding;
 
 import java.util.List;
@@ -35,11 +35,11 @@ public class KitchenFrag extends Fragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_kitchen, container, false);
         recyclerView = binding.getRoot().findViewById(R.id.rv_kitchen);
 //        rvKitchenAdapter = new RVKitchenAdapter(new ArrayList<>(), listener);
-        layoutManager = new LinearLayoutManager(getApplicationContext());
+//        layoutManager = new LinearLayoutManager(getApplicationContext());
 
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(rvKitchenAdapter);
+//        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setAdapter(rvKitchenAdapter);
 
         return binding.getRoot();
     }

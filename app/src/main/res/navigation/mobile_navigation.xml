@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.pbp.uas_pchop.Display.HomeFrag"
+        android:name="com.pbp.uas_pchop.display.HomeFrag"
         android:label="home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -30,31 +30,31 @@
 
     <fragment
         android:id="@+id/navigation_profil"
-        android:name="com.pbp.uas_pchop.Display.ProfileFrag"
+        android:name="com.pbp.uas_pchop.display.ProfileFrag"
         android:label="profil"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_clothes"
-        android:name="com.pbp.uas_pchop.Display.ClothesFrag"
+        android:name="com.pbp.uas_pchop.display.ClothesFrag"
         android:label="clothes"
         tools:layout="@layout/fragment_clothes" />
 
     <fragment
         android:id="@+id/navigation_games"
-        android:name="com.pbp.uas_pchop.Display.GamesFrag"
+        android:name="com.pbp.uas_pchop.display.GamesFrag"
         android:label="games"
         tools:layout="@layout/fragment_games" />
 
     <fragment
         android:id="@+id/navigation_sport"
-        android:name="com.pbp.uas_pchop.Display.SportFrag"
+        android:name="com.pbp.uas_pchop.display.SportFrag"
         android:label="sport"
         tools:layout="@layout/fragment_sport" />
 
     <fragment
         android:id="@+id/navigation_kitchen"
-        android:name="com.pbp.uas_pchop.Display.KitchenFrag"
+        android:name="com.pbp.uas_pchop.display.KitchenFrag"
         android:label="kitchen"
         tools:layout="@layout/fragment_kitchen" />
 

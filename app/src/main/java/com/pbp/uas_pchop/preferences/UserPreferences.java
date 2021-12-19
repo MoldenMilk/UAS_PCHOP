@@ -1,9 +1,9 @@
-package com.pbp.uas_pchop.Preferences;
+package com.pbp.uas_pchop.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.pbp.uas_pchop.Model.User;
+import com.pbp.uas_pchop.model.User;
 
 public class UserPreferences {
     SharedPreferences sharedPreferences;

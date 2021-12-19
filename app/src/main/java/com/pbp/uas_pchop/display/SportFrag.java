@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.Display;
+package com.pbp.uas_pchop.display;
 
 import static com.mapbox.mapboxsdk.Mapbox.getApplicationContext;
 
@@ -14,11 +14,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbp.uas_pchop.DB.DataSport;
+import com.pbp.uas_pchop.db.DataSport;
 import com.pbp.uas_pchop.R;
-import com.pbp.uas_pchop.RV.RVSportAdapter;
+import com.pbp.uas_pchop.rv.RVSportAdapter;
 import com.pbp.uas_pchop.databinding.FragmentSportBinding;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SportFrag extends Fragment {
@@ -33,13 +34,13 @@ public class SportFrag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_sport, container, false);
-        recyclerView = binding.getRoot().findViewById(R.id.rv_games);
+        recyclerView = binding.getRoot().findViewById(R.id.rv_sport);
 //        rvSportAdapter = new RVSportAdapter(new ArrayList<>(), listener);
-        layoutManager = new LinearLayoutManager(getApplicationContext());
-
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(rvSportAdapter);
+//        layoutManager = new LinearLayoutManager(getApplicationContext());
+//
+//        recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setAdapter(rvSportAdapter);
 
         return binding.getRoot();
     }

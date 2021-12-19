@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Display.KitchenFrag">
+        tools:context=".display.KitchenFrag">
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_kitchen"
             android:layout_width="match_parent"

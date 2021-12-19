@@ -6,7 +6,7 @@
     <data>
         <variable
             name="sprt"
-            type="com.pbp.uas_pchop.DB.DataSport" />
+            type="com.pbp.uas_pchop.db.DataSport" />
     </data>
     <androidx.cardview.widget.CardView
         android:id="@+id/sportRecyclerView"

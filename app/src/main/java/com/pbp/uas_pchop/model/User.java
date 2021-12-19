@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.Model;
+package com.pbp.uas_pchop.model;
 
 
 import androidx.room.ColumnInfo;

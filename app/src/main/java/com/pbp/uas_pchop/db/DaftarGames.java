@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.DB;
+package com.pbp.uas_pchop.db;
 
 import java.util.ArrayList;
 

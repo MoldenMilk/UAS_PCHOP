@@ -6,7 +6,7 @@
     <data>
         <variable
             name="clts"
-            type="com.pbp.uas_pchop.DB.DataClothes" />
+            type="com.pbp.uas_pchop.db.DataClothes" />
     </data>
     <androidx.cardview.widget.CardView
         android:id="@+id/clothesRecyclerView"

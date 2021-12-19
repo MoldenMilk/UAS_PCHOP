@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ktcn"
-            type="com.pbp.uas_pchop.DB.DataKitchen" />
+            type="com.pbp.uas_pchop.db.DataKitchen" />
     </data>
     <androidx.cardview.widget.CardView
         android:id="@+id/kitchenRecyclerView"

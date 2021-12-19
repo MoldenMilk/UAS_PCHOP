@@ -1,4 +1,4 @@
-package com.pbp.uas_pchop.DB;
+package com.pbp.uas_pchop.db;
 
 import android.widget.ImageView;
 
@@ -7,13 +7,13 @@ import androidx.databinding.BindingAdapter;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-public class DataClothes {
+public class DataKitchen {
     public String nama_item;
     public String Desc;
     public String Harga;
     public String imgUrl;
 
-    public DataClothes(String nama_item, String Desc, String Harga, String imgUrl){
+    public DataKitchen(String nama_item, String Desc, String Harga, String imgUrl){
         this.nama_item = nama_item;
         this.Desc = Desc;
         this.Harga = Harga;

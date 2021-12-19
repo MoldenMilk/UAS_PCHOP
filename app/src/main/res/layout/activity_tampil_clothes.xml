@@ -6,7 +6,7 @@
     <data>
         <variable
             name="clts"
-            type="com.pbp.uas_pchop.DB.DaftarClothes" />
+            type="com.pbp.uas_pchop.db.DaftarClothes" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"

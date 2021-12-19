@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ktcn"
-            type="com.pbp.uas_pchop.DB.DaftarKitchen" />
+            type="com.pbp.uas_pchop.db.DaftarKitchen" />
     </data>
     <RelativeLayout
         android:layout_width="match_parent"

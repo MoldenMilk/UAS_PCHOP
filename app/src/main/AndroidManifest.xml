@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pbp.uas_pchop">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -10,19 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UAS_PCHOP">
         <activity
-            android:name=".RV.RVKitchenAdapter"
+            android:name=".rv.RVKitchenAdapter"
             android:exported="true" />
         <activity
-            android:name=".Display.TampilKitchen"
+            android:name=".rv.RVGamesAdapter"
             android:exported="true" />
         <activity
-            android:name=".RV.RVGamesAdapter"
+            android:name=".rv.RVClothesAdapter"
             android:exported="true" />
         <activity
-            android:name=".RV.RVClothesAdapter"
-            android:exported="true" />
-        <activity
-            android:name=".RV.RVSportAdapter"
+            android:name=".rv.RVSportAdapter"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"

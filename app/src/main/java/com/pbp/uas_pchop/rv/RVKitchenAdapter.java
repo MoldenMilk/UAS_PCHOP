@@ -1,20 +1,16 @@
-package com.pbp.uas_pchop.RV;
+package com.pbp.uas_pchop.rv;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.pbp.uas_pchop.DB.DataGames;
-import com.pbp.uas_pchop.DB.DataKitchen;
+import com.pbp.uas_pchop.db.DataKitchen;
 import com.pbp.uas_pchop.R;
-import com.pbp.uas_pchop.databinding.ActivityRvgamesAdapterBinding;
 import com.pbp.uas_pchop.databinding.ActivityRvkitchenAdapterBinding;
 
 import java.util.List;
